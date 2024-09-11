@@ -3,7 +3,8 @@
 
 // dot prod kernel
 __global__ void dotProd(float *d_a, float *d_b, float *d_dotprod, float *prodVec, int N) {
-	int col = blockIdx.x * blockDim.x + threadIdx.x;
+	int tid = threadIdx.x;
+	int col = blockIdx.x * blockDim.x;
 	
 	// element-wise products
 	if (col < N) {
@@ -84,7 +85,7 @@ int main() {
         
         printf("--------\n");
         printf("Dot Product:\n");
-        printf("%f ", h_c[0]);
+        printf("%f ", h_dotprod[0]);
         printf("\n--------\n");
 
 	// clean up memory

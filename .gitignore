@@ -1,0 +1,13 @@
+bmm
+dotProd
+matAdd
+matScale
+softmax
+vectAdd
+
+checkDPsupport  
+layernorm  
+matMul  
+relu	    
+transpose
+

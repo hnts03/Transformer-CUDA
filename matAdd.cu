@@ -57,7 +57,7 @@ int main() {
 		for (int j = 0; j < N; ++j) {
 			printf("A: %f ", h_A[i * N + j]);
 		}
-		printf("\n)
+		printf("\n");
 	}
 
 	printf("----------\n");
@@ -67,7 +67,7 @@ int main() {
 		for (int j = 0; j < N; ++j) {
 			printf("B: %f ", h_B[i * N + j]);
 		}
-		printf("\n)
+		printf("\n");
 	}
 
 	printf("----------\n");
@@ -77,7 +77,7 @@ int main() {
 		for (int j = 0; j < N; ++j) {
 			printf("C: %f ", h_C[i * N + j]);
 		}
-		printf("\n)
+		printf("\n");
 	}
 
 	// clean up data
